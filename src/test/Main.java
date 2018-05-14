@@ -13,10 +13,10 @@ package test;
  */
 public class Main {
     public static void main(String[] args) {
-        Main m1=new Main();
-        Main m2=m1;
-        String s1="hello", s2=s1+"";
-        System.out.println((s1==s1)+" "+s1.equals(s2));
+        System.out.println("start");
+        Singleton singleton=Singleton.INSTANCE;
+        System.out.println("call fun");
+        singleton.fun();
     }
 
     
