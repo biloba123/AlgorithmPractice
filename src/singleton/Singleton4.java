@@ -21,7 +21,8 @@ import java.io.Serializable;
 class Singleton4 implements Serializable {
     private static final Singleton4 INSTANCE = new Singleton4();
 
-    private Singleton4() {}
+    private Singleton4() {
+    }
 
     public static Singleton4 getInstance() {
         return INSTANCE;
@@ -46,5 +47,9 @@ class Singleton4 implements Serializable {
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s1 == s2);
+
+
     }
+
+
 }
