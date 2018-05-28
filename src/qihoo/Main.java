@@ -1,4 +1,5 @@
 package qihoo;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -16,34 +17,34 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
+        Scanner cin = new Scanner(System.in);
         int count;
-        count=cin.nextInt();
-        long[] colors=new long[3];
+        count = cin.nextInt();
+        long[] colors = new long[3];
         for (int i = 0; i < count; i++) {
             for (int i1 = 0; i1 < 3; i1++) {
-                colors[i1]=cin.nextLong();
+                colors[i1] = cin.nextLong();
             }
 
             Arrays.sort(colors);
             System.out.println(Arrays.toString(colors));
-            long x=(2*colors[0]+2*colors[1]-colors[2])/3;
-            System.out.println("x="+x);
+            long x = (2 * colors[0] + 2 * colors[1] - colors[2]) / 3;
+            System.out.println("x=" + x);
 
-            long result=0;
-            if(colors[0]!=0 && x>=0){
-                colors[0]+=colors[1]-x;
-                colors[2]+=x;
-                colors[1]=0;
+            long result = 0;
+            if (colors[0] != 0 && x >= 0) {
+                colors[0] += colors[1] - x;
+                colors[2] += x;
+                colors[1] = 0;
             }
             System.out.println(Arrays.toString(colors));
 
-            result+=Math.min(colors[2]/2, colors[0]);
-            colors[0]-=result;
-            colors[2]-=result*2;
+            result += Math.min(colors[2] / 2, colors[0]);
+            colors[0] -= result;
+            colors[2] -= result * 2;
             Arrays.sort(colors);
             System.out.println(Arrays.toString(colors));
-            result+=Math.min(colors[2]/2, colors[1]);
+            result += Math.min(colors[2] / 2, colors[1]);
 
 
             System.out.println(Arrays.toString(colors));

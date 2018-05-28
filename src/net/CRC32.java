@@ -13,7 +13,7 @@ package net;
  * @since
  */
 class CRC32 {
-    private static long divisor= 0x104c11db7L;
+    private static long divisor = 0x104c11db7L;
     private static String divisorStr = Long.toBinaryString(divisor);
 
     public static int calculate(Frame frame) {
@@ -48,7 +48,7 @@ class CRC32 {
 
         binaryDiv(resultChars, divChars, divLen);
 
-        int fcs=binaryStrToInt(new String(resultChars));
+        int fcs = binaryStrToInt(new String(resultChars));
         frame.setCrc(fcs);
         return fcs;
     }

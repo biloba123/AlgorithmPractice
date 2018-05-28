@@ -14,20 +14,20 @@ package offer;
  */
 class _50_ {
     public int[] multiply(int[] data) {
-        if (data==null || data.length<1) {
+        if (data == null || data.length < 1) {
             return null;
         }
 
-        int[] muls=new int[data.length];
-        muls[0]=1;
-        for(int i=1; i<data.length; i++){
-            muls[i]=muls[i-1]*data[i-1];
+        int[] muls = new int[data.length];
+        muls[0] = 1;
+        for (int i = 1; i < data.length; i++) {
+            muls[i] = muls[i - 1] * data[i - 1];
         }
 
-        double temp=1;
-        for(int i=data.length-2; i>=0; i--){
-            temp=temp*data[i+1];
-            muls[i]*=temp;
+        double temp = 1;
+        for (int i = data.length - 2; i >= 0; i--) {
+            temp = temp * data[i + 1];
+            muls[i] *= temp;
         }
 
         return muls;

@@ -14,17 +14,17 @@ package offer;
  */
 class _54_ {
     public ListNode EntryNodeOfLoop(ListNode pHead) {
-        if (pHead==null) {
+        if (pHead == null) {
             return null;
         }
 
-        int count=getLoopNodeCount(pHead);
-        System.out.println("Loop count: "+count);
+        int count = getLoopNodeCount(pHead);
+        System.out.println("Loop count: " + count);
 
-        if (count!=-1) {
-            ListNode front=pHead;
-            for(int i=0; i<count; i++, front=front.next);
-            for (ListNode node=pHead; node!=front; node=node.next, front=front.next);
+        if (count != -1) {
+            ListNode front = pHead;
+            for (int i = 0; i < count; i++, front = front.next) ;
+            for (ListNode node = pHead; node != front; node = node.next, front = front.next) ;
             return front;
         }
 
@@ -32,14 +32,15 @@ class _54_ {
     }
 
     private int getLoopNodeCount(ListNode pHead) {
-        if (pHead!=null && pHead.next!=null){
-            ListNode slow=pHead, fast=pHead.next;
-            for(; fast!=null && fast.next!=null && slow!=fast; slow=slow.next, fast=fast.next.next);
-            if(slow==fast && slow!=null){
-                int count=1;
-                for(ListNode node=slow.next; node!=slow; node=node.next, count++);
+        if (pHead != null && pHead.next != null) {
+            ListNode slow = pHead, fast = pHead.next;
+            for (; fast != null && fast.next != null && slow != fast; slow = slow.next, fast = fast.next.next)
+                ;
+            if (slow == fast && slow != null) {
+                int count = 1;
+                for (ListNode node = slow.next; node != slow; node = node.next, count++) ;
                 return count;
-            }else {
+            } else {
                 return -1;
             }
         }

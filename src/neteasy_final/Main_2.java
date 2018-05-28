@@ -16,25 +16,25 @@ import java.util.Scanner;
  */
 public class Main_2 {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
+        Scanner cin = new Scanner(System.in);
         int count;
         int len;
         String s;
-        count=cin.nextInt();
+        count = cin.nextInt();
         for (int i = 0; i < count; i++) {
-            len=cin.nextInt();
-            s=cin.next();
+            len = cin.nextInt();
+            s = cin.next();
             System.out.println(minLightCount(len, s));
         }
 
     }
 
     private static int minLightCount(int len, String s) {
-        int light=0;
+        int light = 0;
         for (int i = 0; i < len; i++) {
-            if(s.charAt(i)=='.'){
+            if (s.charAt(i) == '.') {
                 light++;
-                i+=2;
+                i += 2;
             }
         }
 

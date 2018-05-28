@@ -13,13 +13,13 @@ package offer;
  * @since
  */
 class _35_ {
-    public int GetNumberOfK(int [] array , int k) {
-        if (array==null || array.length<1 || array[0]>k || array[array.length-1]<k) {
+    public int GetNumberOfK(int[] array, int k) {
+        if (array == null || array.length < 1 || array[0] > k || array[array.length - 1] < k) {
             return 0;
         }
 
-        int firstIndex=getFirstK(array, k);
-        if (firstIndex==-1) {
+        int firstIndex = getFirstK(array, k);
+        if (firstIndex == -1) {
             return 0;
         }
 
@@ -28,28 +28,28 @@ class _35_ {
 //        for(int i=firstIndex+1; array[i]==k; i++, count++);
 //        return count;
 
-        int lastIndex=getLastK(array, k);
-        if (lastIndex==-1) {
+        int lastIndex = getLastK(array, k);
+        if (lastIndex == -1) {
             return 0;
         }
 
-        return lastIndex-firstIndex+1;
+        return lastIndex - firstIndex + 1;
     }
 
     private int getLastK(int[] array, int k) {
-        int start=0, end=array.length-1, middle;
-        for(; start<=end; ){
-            middle=(start+end)/2;
-            if(array[middle]==k){
-                if(middle+1>=array.length || array[middle+1]!=k){
+        int start = 0, end = array.length - 1, middle;
+        for (; start <= end; ) {
+            middle = (start + end) / 2;
+            if (array[middle] == k) {
+                if (middle + 1 >= array.length || array[middle + 1] != k) {
                     return middle;
-                }else {
-                    start=middle+1;
+                } else {
+                    start = middle + 1;
                 }
-            }else if(array[middle]>k){
-                end=middle-1;
-            }else {
-                start=middle+1;
+            } else if (array[middle] > k) {
+                end = middle - 1;
+            } else {
+                start = middle + 1;
             }
         }
 
@@ -57,14 +57,14 @@ class _35_ {
     }
 
     private int getFirstK(int[] array, int k) {
-        int start=0, end=array.length-1, middle;
-        for(; start<=end; ) {
+        int start = 0, end = array.length - 1, middle;
+        for (; start <= end; ) {
             middle = (start + end) / 2;
             if (array[middle] == k) {
-                if (middle - 1 <0 || array[middle - 1] != k) {
+                if (middle - 1 < 0 || array[middle - 1] != k) {
                     return middle;
                 } else {
-                    end = middle-1;
+                    end = middle - 1;
                 }
             } else if (array[middle] > k) {
                 end = middle - 1;

@@ -19,11 +19,11 @@ public class IEEE {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         System.out.println("input data: ");
-        String data1=cin.nextLine();
+        String data1 = cin.nextLine();
 
-        List<Frame> frames=Frame.createFrames(data1);
+        List<Frame> frames = Frame.createFrames(data1);
         for (Frame frame : frames) {
-            int r=CRC32.calculate(frame);
+            int r = CRC32.calculate(frame);
             System.out.println("crc: ");
             System.out.println(Integer.toBinaryString(r));
             System.out.println(Integer.toHexString(r));

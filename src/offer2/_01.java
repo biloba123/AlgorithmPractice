@@ -13,20 +13,20 @@ package offer2;
  * @since
  */
 class _01 {
-    public boolean Find(int target, int [][] array) {
-        if (array==null || array.length<1 || array[0].length<1) {
+    public boolean Find(int target, int[][] array) {
+        if (array == null || array.length < 1 || array[0].length < 1) {
             return false;
         }
 
-        int row=array.length, col=array[0].length;
+        int row = array.length, col = array[0].length;
         int temp;
-        for(int i=0, j=col-1; i<row && j>=0; ){
-            temp=array[i][j];
-            if (temp==target) {
+        for (int i = 0, j = col - 1; i < row && j >= 0; ) {
+            temp = array[i][j];
+            if (temp == target) {
                 return true;
-            }else if(target>temp){
+            } else if (target > temp) {
                 i++;
-            }else {
+            } else {
                 j--;
             }
         }

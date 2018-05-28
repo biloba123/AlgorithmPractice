@@ -14,7 +14,7 @@ package finalizer;
  */
 class Test {
 
-    private final Object finalizerGuardian=new Object(){
+    private final Object finalizerGuardian = new Object() {
         @Override
         protected void finalize() throws Throwable {
             Test.this.finalize();
@@ -28,9 +28,9 @@ class Test {
         throw new RuntimeException("lalala");
     }
 
-    public static void main(String[] args){
-        Child child=new Child();
-        child=null;
+    public static void main(String[] args) {
+        Child child = new Child();
+        child = null;
 
 
         System.gc();
@@ -48,12 +48,12 @@ class Test {
 
 }
 
-class Child extends Test{
+class Child extends Test {
     @Override
     protected void finalize() throws Throwable {
         try {
             System.out.println("child finalize");
-        }finally {
+        } finally {
 //            super.finalize();
         }
     }

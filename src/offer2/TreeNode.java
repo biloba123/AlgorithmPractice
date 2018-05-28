@@ -21,10 +21,12 @@ class TreeNode {
     TreeNode right;
     TreeNode next;
 
-    TreeNode(int x) { val = x; }
+    TreeNode(int x) {
+        val = x;
+    }
 
-    public static TreeNode createBinaryTree(int... vals){
-        if (vals == null || vals.length<1) {
+    public static TreeNode createBinaryTree(int... vals) {
+        if (vals == null || vals.length < 1) {
             return null;
         }
 
@@ -32,70 +34,70 @@ class TreeNode {
     }
 
     private static TreeNode createBinaryTree(int[] vals, int index) {
-        if (index>=vals.length || vals[index]==0) {
+        if (index >= vals.length || vals[index] == 0) {
             return null;
         }
 
-        TreeNode node=new TreeNode(vals[index]);
-        node.left=createBinaryTree(vals, index*2+1);
-        if(node.left!=null){
-            node.left.next =node;
+        TreeNode node = new TreeNode(vals[index]);
+        node.left = createBinaryTree(vals, index * 2 + 1);
+        if (node.left != null) {
+            node.left.next = node;
         }
-        node.right=createBinaryTree(vals, index*2+2);
-        if (node.right!=null) {
-            node.right.next =node;
+        node.right = createBinaryTree(vals, index * 2 + 2);
+        if (node.right != null) {
+            node.right.next = node;
         }
 
         return node;
     }
 
-    public void layer(){
-        LinkedList<TreeNode> queue=new LinkedList<>();
+    public void layer() {
+        LinkedList<TreeNode> queue = new LinkedList<>();
         queue.offer(this);
         TreeNode node;
-        int count=1, temp;
-        while (!queue.isEmpty()){
-            temp=0;
+        int count = 1, temp;
+        while (!queue.isEmpty()) {
+            temp = 0;
             for (int i = 0; i < count; i++) {
-                node=queue.poll();
-                System.out.print(node.val+" ");
+                node = queue.poll();
+                System.out.print(node.val + " ");
 
-                if (node.left!=null) {
+                if (node.left != null) {
                     queue.offer(node.left);
                     temp++;
                 }
 
-                if (node.right!=null) {
+                if (node.right != null) {
                     queue.offer(node.right);
                     temp++;
                 }
             }
-            count=temp;
+            count = temp;
             System.out.println();
         }
     }
 
-    public void preOrderRec(){
+    public void preOrderRec() {
         preOrderRec(this);
         System.out.println();
     }
 
     private void preOrderRec(TreeNode treeNode) {
         if (treeNode != null) {
-            System.out.print(treeNode.val+" ");
+            System.out.print(treeNode.val + " ");
             preOrderRec(treeNode.left);
             preOrderRec(treeNode.right);
         }
     }
 
-    public void preOrder(){
-        Stack<TreeNode> stack=new Stack<>();
+    public void preOrder() {
+        Stack<TreeNode> stack = new Stack<>();
         stack.push(this);
-        for(TreeNode node; !stack.isEmpty(); ){
-            node=stack.pop();
-            System.out.print(node.val+" ");
+        for (TreeNode node; !stack.isEmpty(); ) {
+            node = stack.pop();
+            System.out.print(node.val + " ");
 
-            if (node.right!=null) {
+            if (node.right != null) {
                 stack.push(node.right);
             }
 
@@ -107,7 +109,7 @@ class TreeNode {
         System.out.println();
     }
 
-    public void inOrderRec(){
+    public void inOrderRec() {
         inOrderRec(this);
         System.out.println();
     }
@@ -115,22 +117,22 @@ class TreeNode {
     private void inOrderRec(TreeNode treeNode) {
         if (treeNode != null) {
             inOrderRec(treeNode.left);
-            System.out.print(treeNode.val+" ");
+            System.out.print(treeNode.val + " ");
             inOrderRec(treeNode.right);
         }
     }
 
-    public void inOrder(){
-        Stack<TreeNode> stack=new Stack<>();
-        for(TreeNode node = this; node!=null || !stack.isEmpty(); ){
-            while (node!=null){
+    public void inOrder() {
+        Stack<TreeNode> stack = new Stack<>();
+        for (TreeNode node = this; node != null || !stack.isEmpty(); ) {
+            while (node != null) {
                 stack.push(node);
-                node=node.left;
+                node = node.left;
             }
 
-            node=stack.pop();
-            System.out.print(node.val+" ");
-            node=node.right;
+            node = stack.pop();
+            System.out.print(node.val + " ");
+            node = node.right;
         }
 
         System.out.println();

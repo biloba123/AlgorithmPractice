@@ -15,21 +15,21 @@ import java.util.Stack;
  * @since
  */
 class _18_ {
-    public static class MinStack{
-        private Stack<Integer> mStack=new Stack<>();
-        private Stack<Integer> mMinStack=new Stack<>();
+    public static class MinStack {
+        private Stack<Integer> mStack = new Stack<>();
+        private Stack<Integer> mMinStack = new Stack<>();
 
-        public void push(int val){
+        public void push(int val) {
             mStack.push(val);
-            if(mMinStack.isEmpty() || mMinStack.peek()>val){
+            if (mMinStack.isEmpty() || mMinStack.peek() > val) {
                 mMinStack.push(val);
-            }else {
+            } else {
                 mMinStack.push(mMinStack.peek());
             }
         }
 
-        public int pop(){
-            if(mStack.isEmpty()){
+        public int pop() {
+            if (mStack.isEmpty()) {
                 throw new RuntimeException("Empty");
             }
 
@@ -37,15 +37,15 @@ class _18_ {
             return mStack.pop();
         }
 
-        public int min(){
-            if(mMinStack.isEmpty()){
+        public int min() {
+            if (mMinStack.isEmpty()) {
                 throw new RuntimeException("Empty");
             }
             return mMinStack.peek();
         }
 
         public int top() {
-            if(mStack.isEmpty()){
+            if (mStack.isEmpty()) {
                 throw new RuntimeException("Empty");
             }
             return mStack.peek();

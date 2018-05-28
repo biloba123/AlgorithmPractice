@@ -34,27 +34,27 @@ class _23_ {
     }
 
     private static RandomListNode reconnectNodes(RandomListNode node) {
-        RandomListNode newHead=node.next;
-        for(RandomListNode node1 = newHead; node!=null; node=node.next, node1=node1.next){
-            node.next=node1.next;
-            node1.next=node.next;
+        RandomListNode newHead = node.next;
+        for (RandomListNode node1 = newHead; node != null; node = node.next, node1 = node1.next) {
+            node.next = node1.next;
+            node1.next = node.next;
         }
         return newHead;
     }
 
     private static void sibling(RandomListNode node) {
-        for(; node!=null; node=node.next.next){
+        for (; node != null; node = node.next.next) {
             if (node.random != null) {
-                node.next.random=node.random.next;
+                node.next.random = node.random.next;
             }
         }
     }
 
     private static void cloneNodes(RandomListNode node) {
-        for(; node!=null; node=node.next.next){
-            RandomListNode newNode=new RandomListNode(node.label);
-            newNode.next=node.next;
-            node.next=newNode;
+        for (; node != null; node = node.next.next) {
+            RandomListNode newNode = new RandomListNode(node.label);
+            newNode.next = node.next;
+            node.next = newNode;
         }
     }
 }

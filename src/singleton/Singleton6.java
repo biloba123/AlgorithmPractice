@@ -12,10 +12,10 @@ package singleton;
  * @see
  * @since
  */
-enum  Singleton6 {
+enum Singleton6 {
     INSTANCE;
 
-    public void fun(){
+    public void fun() {
         // do something
     }
 }

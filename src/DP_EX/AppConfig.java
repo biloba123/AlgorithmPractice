@@ -18,15 +18,15 @@ import java.io.Serializable;
 public class AppConfig implements Serializable {
     private transient String parameterA;
 
-    private static class AppConfigHolder{
+    private static class AppConfigHolder {
         private static final AppConfig INSTANCE = new AppConfig();
     }
 
-    public static AppConfig getInstance(){
+    public static AppConfig getInstance() {
         return AppConfigHolder.INSTANCE;
     }
 
-    private AppConfig(){
+    private AppConfig() {
     }
 
     //反序列化钩子方法

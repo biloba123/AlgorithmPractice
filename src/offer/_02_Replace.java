@@ -12,40 +12,40 @@ package offer;
  * @since
  */
 class _02_Replace {
-    public static int replace(char[] string, int count){
-        if (string==null || count<1) return -1;
+    public static int replace(char[] string, int count) {
+        if (string == null || count < 1) return -1;
 
-        int whiteCount=0;
-        for(int i=0; i<count; i++){
-            if(string[i]==' ') whiteCount++;
+        int whiteCount = 0;
+        for (int i = 0; i < count; i++) {
+            if (string[i] == ' ') whiteCount++;
         }
 
-        int newCount=count+whiteCount*2;
-        if(newCount>string.length) return -1;
+        int newCount = count + whiteCount * 2;
+        if (newCount > string.length) return -1;
 
-        for(int i=newCount-1, j=count-1; i>=0 && j>=0; j--, i--){
+        for (int i = newCount - 1, j = count - 1; i >= 0 && j >= 0; j--, i--) {
             if (string[j] == ' ') {
-                string[i--]='0';
-                string[i--]='2';
-                string[i]='%';
-            }else {
-                string[i]=string[j];
+                string[i--] = '0';
+                string[i--] = '2';
+                string[i] = '%';
+            } else {
+                string[i] = string[j];
             }
         }
         return newCount;
     }
 
     public static String replaceSpace(StringBuffer str) {
-        if(str==null){
+        if (str == null) {
             throw new RuntimeException("Invalid input.");
         }
 
-        StringBuilder sb=new StringBuilder();
-        for(int i=0; i<str.length(); i++){
-            char c=str.charAt(i);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
             if (c == ' ') {
                 sb.append("%20");
-            }else {
+            } else {
                 sb.append(c);
             }
         }

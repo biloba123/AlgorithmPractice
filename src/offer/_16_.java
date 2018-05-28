@@ -13,7 +13,7 @@ package offer;
  * @since
  */
 class _16_ {
-    public static TreeNode getImageTree(TreeNode root){
+    public static TreeNode getImageTree(TreeNode root) {
         if (root == null) {
             return null;
         }
@@ -23,13 +23,13 @@ class _16_ {
     }
 
     private static void exchange(TreeNode node) {
-        TreeNode temp=node.left;
-        node.left=node.right;
-        node.right=temp;
-        if(node.left!=null){
+        TreeNode temp = node.left;
+        node.left = node.right;
+        node.right = temp;
+        if (node.left != null) {
             exchange(node.left);
         }
-        if(node.right!=null){
+        if (node.right != null) {
             exchange(node.right);
         }
     }

@@ -14,34 +14,34 @@ package offer;
  */
 class _48_ {
     public int StrToInt(String str) {
-        if (str==null || str.length()<1) {
+        if (str == null || str.length() < 1) {
             return 0;
         }
 
-        char[] chars=str.toCharArray();
-        int sign=1, i=0;
+        char[] chars = str.toCharArray();
+        int sign = 1, i = 0;
         if (chars[0] == '+') {
             i++;
-            sign=1;
-        }else if (chars[0] == '-') {
+            sign = 1;
+        } else if (chars[0] == '-') {
             i++;
-            sign=-1;
-        }else if(!Character.isDigit(chars[0])){
+            sign = -1;
+        } else if (!Character.isDigit(chars[0])) {
             return 0;
         }
 
-        int num=0;
-        int step=1;
-        for(int j=chars.length-1; j>=i; j--, step*=10){
-            if(Character.isDigit(chars[j])){
-                num+=step*(chars[j]-'0');
+        int num = 0;
+        int step = 1;
+        for (int j = chars.length - 1; j >= i; j--, step *= 10) {
+            if (Character.isDigit(chars[j])) {
+                num += step * (chars[j] - '0');
                 if (num > 0x8000_0000L) {
-                    throw new NumberFormatException(num+"");
+                    throw new NumberFormatException(num + "");
                 }
-            }else {
+            } else {
                 return 0;
             }
         }
-        return num*sign;
+        return num * sign;
     }
 }

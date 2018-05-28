@@ -14,22 +14,22 @@ package offer;
  */
 class _60_ {
     TreeNode KthNode(TreeNode pRoot, int k) {
-        if (pRoot == null || k<1) {
+        if (pRoot == null || k < 1) {
             return null;
         }
 
-        int[] which={k};
+        int[] which = {k};
         return inOrder(pRoot, which);
     }
 
     private TreeNode inOrder(TreeNode node, int[] which) {
-        if(node==null) return null;
+        if (node == null) return null;
 
-        TreeNode result=inOrder(node.left, which);
-        if (result==null) {
-            if (which[0]==1){
+        TreeNode result = inOrder(node.left, which);
+        if (result == null) {
+            if (which[0] == 1) {
                 return node;
-            }else {
+            } else {
                 which[0]--;
                 return inOrder(node.right, which);
             }

@@ -13,35 +13,35 @@ package offer;
  * @since
  */
 class _26_ {
-    public int MoreThanHalfNum_Solution(int [] array) {
-        if (array == null || array.length<1) {
+    public int MoreThanHalfNum_Solution(int[] array) {
+        if (array == null || array.length < 1) {
             return 0;
         }
 
-        int num=array[0], count=0;
+        int num = array[0], count = 0;
         for (int n : array) {
-            if(count==0){
-                num=n;
-                count=1;
-            }else {
-                if(num==n){
+            if (count == 0) {
+                num = n;
+                count = 1;
+            } else {
+                if (num == n) {
                     count++;
-                }else {
+                } else {
                     count--;
                 }
             }
         }
 
-        count=0;
+        count = 0;
         for (int n : array) {
-            if (n==num) {
+            if (n == num) {
                 count++;
             }
         }
 
-        if(count>array.length/2){
+        if (count > array.length / 2) {
             return num;
-        }else {
+        } else {
             return 0;
         }
     }

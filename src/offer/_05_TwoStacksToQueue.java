@@ -15,27 +15,27 @@ import java.util.Stack;
  * @since
  */
 class _05_TwoStacksToQueue {
-    public static class MyQueue<T>{
+    public static class MyQueue<T> {
         private Stack<T> mInStack;
         private Stack<T> mOutStack;
 
-        public MyQueue(){
-            mInStack=new Stack<>();
-            mOutStack=new Stack<>();
+        public MyQueue() {
+            mInStack = new Stack<>();
+            mOutStack = new Stack<>();
         }
 
-        public void appendTail(T val){
+        public void appendTail(T val) {
             mInStack.push(val);
         }
 
-        public T deleteHead(){
-            if(mOutStack.empty()){
-                while (!mInStack.empty()){
+        public T deleteHead() {
+            if (mOutStack.empty()) {
+                while (!mInStack.empty()) {
                     mOutStack.push(mInStack.pop());
                 }
             }
 
-            if(mOutStack.isEmpty()) return null;
+            if (mOutStack.isEmpty()) return null;
 
             return mOutStack.pop();
         }

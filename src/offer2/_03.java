@@ -16,8 +16,8 @@ import java.util.ArrayList;
  */
 class _03 {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-        ArrayList<Integer> list=new ArrayList<>();
-        if (listNode==null) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (listNode == null) {
             return list;
         }
 

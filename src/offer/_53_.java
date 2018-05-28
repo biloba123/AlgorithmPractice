@@ -21,22 +21,22 @@ class _53_ {
             throw new RuntimeException("invalid");
         }
 
-        HashMap<Character, Integer> map=new HashMap<>();
-        char c='\0';
+        HashMap<Character, Integer> map = new HashMap<>();
+        char c = '\0';
         for (int i = 0; i < data.length(); i++) {
-            c=data.charAt(i);
+            c = data.charAt(i);
             if (map.containsKey(c)) {
                 map.put(c, -1);
-            }else {
+            } else {
                 map.put(c, i);
             }
         }
 
-        int minIndex=data.length();
+        int minIndex = data.length();
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-            if (entry.getValue()!=-1 && entry.getValue()<minIndex) {
-                minIndex=entry.getValue();
-                c=entry.getKey();
+            if (entry.getValue() != -1 && entry.getValue() < minIndex) {
+                minIndex = entry.getValue();
+                c = entry.getKey();
             }
         }
 

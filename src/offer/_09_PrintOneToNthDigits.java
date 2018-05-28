@@ -13,14 +13,14 @@ package offer;
  * @since
  */
 class _09_PrintOneToNthDigits {
-    public static void printOneToNthDigits(int n){
-        if(n<1){
+    public static void printOneToNthDigits(int n) {
+        if (n < 1) {
             throw new RuntimeException("Invalid");
         }
 
-        int[] num=new int[n];
+        int[] num = new int[n];
         for (int i = 0; i < n; i++) {
-            num[i]=0;
+            num[i] = 0;
         }
 
         while (addOne(num)) {
@@ -29,27 +29,27 @@ class _09_PrintOneToNthDigits {
     }
 
     private static void printNum(int[] num) {
-        int i=0;
-        for(; num[i]==0; i++);
-        for(; i<num.length; i++){
+        int i = 0;
+        for (; num[i] == 0; i++) ;
+        for (; i < num.length; i++) {
             System.out.print(num[i]);
         }
         System.out.println();
     }
 
-    public static boolean addOne(int[] num){
-        int carry=0;
-        for(int i=num.length-1; i>=0; i--){
-            num[i]+=1;
-            if (num[i]==10){
-                num[i]=0;
-                carry=1;
-            }else {
-                carry=0;
+    public static boolean addOne(int[] num) {
+        int carry = 0;
+        for (int i = num.length - 1; i >= 0; i--) {
+            num[i] += 1;
+            if (num[i] == 10) {
+                num[i] = 0;
+                carry = 1;
+            } else {
+                carry = 0;
                 break;
             }
         }
 
-        return carry==0;
+        return carry == 0;
     }
 }

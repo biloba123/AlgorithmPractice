@@ -13,25 +13,24 @@ package offer;
  * @since
  */
 class _17_ {
-    public static void printMatrixClockWisely(int[][] nums){
-        if (nums == null || nums.length<1 || nums[0].length<1) {
+    public static void printMatrixClockWisely(int[][] nums) {
+        if (nums == null || nums.length < 1 || nums[0].length < 1) {
             return;
         }
 
-        int row=nums.length, col=nums[0].length;
-        int count=(Math.min(row, col)-1)/2;
-        for(int i=0; i<=count; i++){
-            for(int j=i; j<col-i; j++){
-                System.out.printf(nums[i][j]+" ");
+        int row = nums.length, col = nums[0].length;
+        int count = (Math.min(row, col) - 1) / 2;
+        for (int i = 0; i <= count; i++) {
+            for (int j = i; j < col - i; j++) {
+                System.out.printf(nums[i][j] + " ");
             }
 
-            for(int j=i+1; j<row-i; j++){
-                System.out.printf(nums[j][col-i-1]+" ");
+            for (int j = i + 1; j < row - i; j++) {
+                System.out.printf(nums[j][col - i - 1] + " ");
             }
 
 
-
-            if((row-2*i>1) && (col-2*i>1)) {
+            if ((row - 2 * i > 1) && (col - 2 * i > 1)) {
                 for (int j = col - i - 2; j >= i; j--) {
                     System.out.printf(nums[row - i - 1][j] + " ");
                 }

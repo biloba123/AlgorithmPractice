@@ -13,11 +13,11 @@ package offer;
  * @since
  */
 class _46_ {
-    public int Add(int num1,int num2) {
+    public int Add(int num1, int num2) {
         int sum, carry;
-        for (; num2!=0; num1=sum, num2=carry){
-            sum=num1^num2;
-            carry=(num1&num2)<<1;
+        for (; num2 != 0; num1 = sum, num2 = carry) {
+            sum = num1 ^ num2;
+            carry = (num1 & num2) << 1;
         }
         return num1;
     }

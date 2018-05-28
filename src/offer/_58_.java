@@ -19,22 +19,22 @@ import java.util.Stack;
  */
 class _58_ {
     ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
-        ArrayList<ArrayList<Integer>> lists=new ArrayList<>();
+        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
         if (pRoot == null) {
             return lists;
         }
 
-        Queue<TreeNode> queue=new ArrayDeque<>();
-        Stack<Integer> stack=new Stack<>();
+        Queue<TreeNode> queue = new ArrayDeque<>();
+        Stack<Integer> stack = new Stack<>();
         queue.add(pRoot);
-        int temp=0;
+        int temp = 0;
         ArrayList<Integer> list;
         TreeNode node;
-        boolean isLtoR=true;
-        for(int count=1; !queue.isEmpty(); count=temp, temp=0,isLtoR=!isLtoR){
-            list=new ArrayList<>();
-            for(; count>0; count--){
-                node=queue.poll();
+        boolean isLtoR = true;
+        for (int count = 1; !queue.isEmpty(); count = temp, temp = 0, isLtoR = !isLtoR) {
+            list = new ArrayList<>();
+            for (; count > 0; count--) {
+                node = queue.poll();
                 if (node.left != null) {
                     queue.offer(node.left);
                     temp++;
@@ -44,14 +44,14 @@ class _58_ {
                     temp++;
                 }
 
-                if (isLtoR){
+                if (isLtoR) {
                     list.add(node.val);
-                }else {
+                } else {
                     stack.push(node.val);
                 }
             }
 
-            for(; !stack.isEmpty(); list.add(stack.pop()));
+            for (; !stack.isEmpty(); list.add(stack.pop())) ;
 
             lists.add(list);
         }

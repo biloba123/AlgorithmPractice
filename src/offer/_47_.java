@@ -14,8 +14,8 @@ package offer;
  */
 class _47_ {
     public int Sum_Solution(int n) {
-        int sum=0;
-        boolean isEnd=n==0 ||  ((sum=n+Sum_Solution(n-1))==0);
+        int sum = 0;
+        boolean isEnd = n == 0 || ((sum = n + Sum_Solution(n - 1)) == 0);
         return sum;
     }
 }

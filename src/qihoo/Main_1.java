@@ -16,21 +16,21 @@ import java.util.Scanner;
  */
 public class Main_1 {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
+        Scanner cin = new Scanner(System.in);
         int count;
-        count=cin.nextInt();
+        count = cin.nextInt();
         int n;
         int pixels;
-        int[] points=new int[4];
+        int[] points = new int[4];
         for (int i = 0; i < count; i++) {
-            n=cin.nextInt();
-            pixels=0;
+            n = cin.nextInt();
+            pixels = 0;
             for (int i1 = 0; i1 < n; i1++) {
                 for (int i2 = 0; i2 < 4; i2++) {
-                    points[i2]=cin.nextInt();
+                    points[i2] = cin.nextInt();
                 }
-                pixels+=(Math.abs(points[2]-points[0])+1)
-                        *(Math.abs(points[3]-points[1])+1);
+                pixels += (Math.abs(points[2] - points[0]) + 1)
+                        * (Math.abs(points[3] - points[1]) + 1);
             }
             System.out.println(pixels);
         }

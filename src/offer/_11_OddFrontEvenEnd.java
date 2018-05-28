@@ -13,22 +13,22 @@ package offer;
  * @since
  */
 class _11_OddFrontEvenEnd {
-    public static void reOrderArray(int [] array) {
-        if(array==null || array.length<1){
+    public static void reOrderArray(int[] array) {
+        if (array == null || array.length < 1) {
             throw new RuntimeException("Invalid");
         }
 
-        int len=array.length;
-        int oddIndex=0;
-        int temp1=0;
+        int len = array.length;
+        int oddIndex = 0;
+        int temp1 = 0;
 
-        for(int i=0; i<len; i++){
-            if(array[i]%2==1){
-                temp1=array[i];
-                for(int j=i; j>oddIndex;){
-                    array[j]=array[--j];
+        for (int i = 0; i < len; i++) {
+            if (array[i] % 2 == 1) {
+                temp1 = array[i];
+                for (int j = i; j > oddIndex; ) {
+                    array[j] = array[--j];
                 }
-                array[oddIndex++]=temp1;
+                array[oddIndex++] = temp1;
             }
         }
     }

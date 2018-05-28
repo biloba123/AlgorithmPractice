@@ -14,7 +14,7 @@ package offer;
  */
 class _51_ {
     public boolean match(char[] str, char[] pattern) {
-        if (str==null || pattern==null) {
+        if (str == null || pattern == null) {
             return false;
         }
         return match(new String(str), new String(pattern));
@@ -28,32 +28,32 @@ class _51_ {
     }
 
     private static boolean matchCore(String input, int i, String pattern, int i1) {
-        int iLen=input.length(), pLen=pattern.length();
-        if(i>=iLen && i1>=pLen){
+        int iLen = input.length(), pLen = pattern.length();
+        if (i >= iLen && i1 >= pLen) {
             return true;
         }
 
-        if(i<iLen && i1>=pLen){
+        if (i < iLen && i1 >= pLen) {
             return false;
         }
 
-        for(; i<iLen && i1<pLen; ){
-            if(i1+1<pLen && pattern.charAt(i1+1)=='*'){
-                return matchCore(input, i, pattern, i1+2)   //*匹配0个
-                        || (input.charAt(i)==pattern.charAt(i1)
-                             && (matchCore(input, i+1, pattern, i1+2) //1个
-                                        ||matchCore(input, i+1, pattern, i1)));//1个以上
-            }else {
-                if(input.charAt(i)==pattern.charAt(i1) || pattern.charAt(i1)=='.'){
+        for (; i < iLen && i1 < pLen; ) {
+            if (i1 + 1 < pLen && pattern.charAt(i1 + 1) == '*') {
+                return matchCore(input, i, pattern, i1 + 2)   //*匹配0个
+                        || (input.charAt(i) == pattern.charAt(i1)
+                        && (matchCore(input, i + 1, pattern, i1 + 2) //1个
+                        || matchCore(input, i + 1, pattern, i1)));//1个以上
+            } else {
+                if (input.charAt(i) == pattern.charAt(i1) || pattern.charAt(i1) == '.') {
                     i++;
                     i1++;
-                }else {
+                } else {
                     return false;
                 }
             }
         }
 
-        if(i>=iLen && i1>=pLen){
+        if (i >= iLen && i1 >= pLen) {
             return true;
         }
 

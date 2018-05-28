@@ -13,34 +13,34 @@ package offer;
  * @since
  */
 class _43_ {
-    public boolean isContinuous(int [] numbers) {
-        if (numbers==null || numbers.length!=5) {
+    public boolean isContinuous(int[] numbers) {
+        if (numbers == null || numbers.length != 5) {
             return false;
         }
 
-        int pokers[]=new int[14];
+        int pokers[] = new int[14];
         for (int number : numbers) {
             pokers[number]++;
         }
 
-        int start=-1;
-        for(int i=1; i<14; i++){
-            if(pokers[i]!=0){
-                if(pokers[i]==1){
-                    if (start==-1){
-                        start=i;
+        int start = -1;
+        for (int i = 1; i < 14; i++) {
+            if (pokers[i] != 0) {
+                if (pokers[i] == 1) {
+                    if (start == -1) {
+                        start = i;
                     }
-                }else {
+                } else {
                     return false;
                 }
-            }else {
-                if (start!=-1){
-                    if (i-start==5){
+            } else {
+                if (start != -1) {
+                    if (i - start == 5) {
                         break;
                     }
-                    if(pokers[0]>0){
+                    if (pokers[0] > 0) {
                         pokers[0]--;
-                    }else {
+                    } else {
                         return false;
                     }
                 }

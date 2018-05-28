@@ -16,31 +16,31 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
+        Scanner cin = new Scanner(System.in);
         int n;
-        while (cin.hasNextInt()){
-            n=cin.nextInt();
+        while (cin.hasNextInt()) {
+            n = cin.nextInt();
             System.out.println(maxProduct(n));
         }
 
     }
 
     private static int maxProduct(int n) {
-        if(n<1){
+        if (n < 1) {
             return 0;
         }
-        if(n==2 || n==3){
-            return n-1;
+        if (n == 2 || n == 3) {
+            return n - 1;
         }
-        if(n==4){
+        if (n == 4) {
             return n;
         }
 
-        int product=1;
-        for(; n>4; n-=3){
-            product*=3;
+        int product = 1;
+        for (; n > 4; n -= 3) {
+            product *= 3;
         }
 
-        return product*n;
+        return product * n;
     }
 }

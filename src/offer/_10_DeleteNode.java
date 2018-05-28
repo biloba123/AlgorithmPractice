@@ -19,19 +19,19 @@ class _10_DeleteNode {
     }
 
     public static ListNode deleteNode(ListNode head, ListNode toBeDeleted) {
-        if (head==null || toBeDeleted==null){
+        if (head == null || toBeDeleted == null) {
             return head;
         }
 
-        ListNode next=toBeDeleted.next;
-        if(next!=null){
-            toBeDeleted.value=next.value;
-            toBeDeleted.next=next.next;
-            next.next=null;
-        }else {
-            ListNode node=head;
-            for(; node.next!=toBeDeleted; node=node.next);
-            node.next=null;
+        ListNode next = toBeDeleted.next;
+        if (next != null) {
+            toBeDeleted.value = next.value;
+            toBeDeleted.next = next.next;
+            next.next = null;
+        } else {
+            ListNode node = head;
+            for (; node.next != toBeDeleted; node = node.next) ;
+            node.next = null;
         }
 
         return head;

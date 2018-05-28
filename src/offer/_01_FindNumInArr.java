@@ -12,17 +12,17 @@ package offer;
  * @since
  */
 class _01_FindNumInArr {
-    public static boolean find(int[][] array, int target){
-        if(array==null || array.length<1 || array[0].length<1) return false;
+    public static boolean find(int[][] array, int target) {
+        if (array == null || array.length < 1 || array[0].length < 1) return false;
 
-        int row=array.length, col=array[0].length;
-        for(int i=0, j=col-1; i<row && j>=0;){
-            if (array[i][j]>target){
+        int row = array.length, col = array[0].length;
+        for (int i = 0, j = col - 1; i < row && j >= 0; ) {
+            if (array[i][j] > target) {
                 j--;
-            }else if(array[i][j]<target){
+            } else if (array[i][j] < target) {
                 i++;
-            }else {
-                System.out.println(i+" "+j);
+            } else {
+                System.out.println(i + " " + j);
                 return true;
             }
         }

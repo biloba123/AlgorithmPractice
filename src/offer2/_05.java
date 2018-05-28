@@ -15,7 +15,7 @@ import java.util.Stack;
  * @since
  */
 class _05 {
-    private Stack<Integer> mInStack=new Stack<>(), mOutStack=new Stack<>();
+    private Stack<Integer> mInStack = new Stack<>(), mOutStack = new Stack<>();
 
     public void push(int node) {
         mInStack.push(node);
@@ -23,7 +23,7 @@ class _05 {
 
     public int pop() {
         if (mOutStack.isEmpty()) {
-            while (!mInStack.isEmpty()){
+            while (!mInStack.isEmpty()) {
                 mOutStack.push(mInStack.pop());
             }
         }

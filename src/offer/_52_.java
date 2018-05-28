@@ -15,7 +15,7 @@ package offer;
 class _52_ {
 
     public boolean isNumeric(char[] str) {
-        if (str == null || str.length<1) {
+        if (str == null || str.length < 1) {
             return false;
         }
         return isNumeric(new String(str));
@@ -26,64 +26,64 @@ class _52_ {
             return false;
         }
 
-        int indexOfE=-1;
+        int indexOfE = -1;
         char temp;
         for (int i = 0; i < string.length(); i++) {
-            temp=string.charAt(i);
-            if(isValidChar(temp)){
-                if(temp=='e' || temp=='E'){
-                    indexOfE=i;
+            temp = string.charAt(i);
+            if (isValidChar(temp)) {
+                if (temp == 'e' || temp == 'E') {
+                    indexOfE = i;
                     break;
                 }
-            }else {
+            } else {
                 return false;
             }
         }
 
-        if (indexOfE!=-1) {
-            return isNumber(string, 0, indexOfE-1, true)
-                    && isNumber(string, indexOfE+1, string.length()-1, false);
-        }else {
-            return isNumber(string, 0, string.length()-1, true);
+        if (indexOfE != -1) {
+            return isNumber(string, 0, indexOfE - 1, true)
+                    && isNumber(string, indexOfE + 1, string.length() - 1, false);
+        } else {
+            return isNumber(string, 0, string.length() - 1, true);
         }
     }
 
     private static boolean isNumber(String string, int start, int end, boolean allowDecimal) {
-        if (start>end) {
+        if (start > end) {
             return false;
         }
 
-        int i=start;
-        char temp=string.charAt(start);
-        if (temp=='+' || temp=='-') {
+        int i = start;
+        char temp = string.charAt(start);
+        if (temp == '+' || temp == '-') {
             i++;
         }
 
-        if (i>end){
+        if (i > end) {
             return false;
         }
 
         if (allowDecimal) {
-            int dotCount=0;
-            for(; i<=end; i++){
-                temp=string.charAt(i);
-                if(!(Character.isDigit(temp) || (temp=='.' && i+1<=end &&(dotCount++==0)))){
+            int dotCount = 0;
+            for (; i <= end; i++) {
+                temp = string.charAt(i);
+                if (!(Character.isDigit(temp) || (temp == '.' && i + 1 <= end && (dotCount++ == 0)))) {
                     break;
                 }
             }
-        }else {
-            for(; i<=end && Character.isDigit(string.charAt(i)); i++);
+        } else {
+            for (; i <= end && Character.isDigit(string.charAt(i)); i++) ;
         }
 
-        if (i>end) {
+        if (i > end) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
 
     private static boolean isValidChar(char c) {
-        return Character.isDigit(c) || c=='.' || c=='+' || c=='-' || c=='e' || c=='E';
+        return Character.isDigit(c) || c == '.' || c == '+' || c == '-' || c == 'e' || c == 'E';
     }
 
 }

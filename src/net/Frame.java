@@ -43,11 +43,11 @@ class Frame {
             frames.add(new Frame(data));
         } else {//分帧
             int count = length / DATA_MAX_LENGTH + (length % DATA_MAX_LENGTH == 0 ? 0 : 1);
-            int i=0;
-            for (; i < count-1; i++) {
-                frames.add(new Frame(data.substring(i*DATA_MAX_LENGTH, (i+1)*DATA_MAX_LENGTH)));
+            int i = 0;
+            for (; i < count - 1; i++) {
+                frames.add(new Frame(data.substring(i * DATA_MAX_LENGTH, (i + 1) * DATA_MAX_LENGTH)));
             }
-            frames.add(new Frame(data.substring(i*DATA_MAX_LENGTH)));
+            frames.add(new Frame(data.substring(i * DATA_MAX_LENGTH)));
         }
 
         return frames;

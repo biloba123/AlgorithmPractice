@@ -16,21 +16,21 @@ import java.util.ArrayList;
  */
 class _39_ {
     public ArrayList<Integer> findNumbersWithSum(int[] data, int sum) {
-        ArrayList<Integer> list=new ArrayList<>();
-        if (data==null || data.length<2) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (data == null || data.length < 2) {
             return list;
         }
 
-        int s=0;
-        for(int start=0, end=data.length-1; start<end; ){
-            s=data[start]+data[end];
-            if(s==sum){
+        int s = 0;
+        for (int start = 0, end = data.length - 1; start < end; ) {
+            s = data[start] + data[end];
+            if (s == sum) {
                 list.add(data[start]);
                 list.add(data[end]);
                 break;
-            }else if(s>sum){
+            } else if (s > sum) {
                 end--;
-            }else{
+            } else {
                 start++;
             }
         }

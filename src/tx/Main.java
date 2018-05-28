@@ -19,9 +19,8 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int num, count;
         while (in.hasNextInt()) {
-           num=in.nextInt();
-           count=0;
-
+            num = in.nextInt();
+            count = 0;
 
 
         }

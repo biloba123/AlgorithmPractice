@@ -18,16 +18,16 @@ import java.util.Queue;
  */
 class _20_ {
     public static ArrayList<Integer> printFromToBottom(TreeNode root) {
-        ArrayList<Integer> list=new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         if (root == null) {
             return list;
         }
 
-        Queue<TreeNode> queue=new ArrayDeque<>();
+        Queue<TreeNode> queue = new ArrayDeque<>();
         TreeNode temp;
         queue.add(root);
-        while (!queue.isEmpty()){
-            temp=queue.poll();
+        while (!queue.isEmpty()) {
+            temp = queue.poll();
             list.add(temp.val);
 
             if (temp.left != null) {

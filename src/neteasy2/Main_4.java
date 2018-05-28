@@ -16,31 +16,31 @@ import java.util.Scanner;
  */
 public class Main_4 {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
+        Scanner cin = new Scanner(System.in);
         int[] array, temp;
-        for(int count; cin.hasNextInt(); ){
-            count=cin.nextInt();
-            array=new int[count];
+        for (int count; cin.hasNextInt(); ) {
+            count = cin.nextInt();
+            array = new int[count];
             for (int i = 0; i < count; i++) {
-                array[i]=cin.nextInt();
+                array[i] = cin.nextInt();
             }
 
-            temp=new int[count];
-            int index=0;
+            temp = new int[count];
+            int index = 0;
             int i;
-            for(i=count-1; i>=0; i-=2){
-                temp[index++]=array[i];
+            for (i = count - 1; i >= 0; i -= 2) {
+                temp[index++] = array[i];
             }
-            for(int i1=i==-2? 1: 0 ; i1<count; i1+=2){
-                temp[index++]=array[i1];
+            for (int i1 = i == -2 ? 1 : 0; i1 < count; i1 += 2) {
+                temp[index++] = array[i1];
             }
 
-            int l=count-1;
+            int l = count - 1;
             for (int i1 = 0; i1 < l; i1++) {
-                System.out.print(temp[i1]+" ");
+                System.out.print(temp[i1] + " ");
             }
 
-            System.out.println(temp[count-1]);
+            System.out.println(temp[count - 1]);
         }
 
     }

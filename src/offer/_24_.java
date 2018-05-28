@@ -18,9 +18,9 @@ class _24_ {
             return null;
         }
 
-        TreeNode head=root;
-        for(; head.left!=null; head=head.left);
-        TreeNode tail[]=new TreeNode[1];
+        TreeNode head = root;
+        for (; head.left != null; head = head.left) ;
+        TreeNode tail[] = new TreeNode[1];
         convertCore(root, tail);
 
         return head;
@@ -43,18 +43,18 @@ class _24_ {
     }
 
     private static void convertCore(TreeNode treeNode, TreeNode[] tail) {
-        if (treeNode!=null) {
-            if(treeNode.left!=null){
+        if (treeNode != null) {
+            if (treeNode.left != null) {
                 convertCore(treeNode.left, tail);
             }
 
-            treeNode.left=tail[0];
-            if(tail[0]!=null){
-                tail[0].right=treeNode;
+            treeNode.left = tail[0];
+            if (tail[0] != null) {
+                tail[0].right = treeNode;
             }
-            tail[0]=treeNode;
+            tail[0] = treeNode;
 
-            if(treeNode.right!=null){
+            if (treeNode.right != null) {
                 convertCore(treeNode.right, tail);
             }
         }

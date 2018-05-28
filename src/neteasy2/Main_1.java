@@ -17,36 +17,36 @@ import java.util.Scanner;
  */
 public class Main_1 {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
-        for(String s; cin.hasNext(); ){
-            s=cin.next();
+        Scanner cin = new Scanner(System.in);
+        for (String s; cin.hasNext(); ) {
+            s = cin.next();
             System.out.println(getBeautifulCount(s));
         }
 
     }
 
     private static int getBeautifulCount(String s) {
-        if (s == null || s.length()<1) {
+        if (s == null || s.length() < 1) {
             return 0;
         }
 
-        HashMap<Character, Integer> hashMap=new HashMap<>();
-        int charCount=0;
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+        int charCount = 0;
         char c;
-        for (int i = 0;charCount<3 && i < s.length(); i++) {
-            c=s.charAt(i);
+        for (int i = 0; charCount < 3 && i < s.length(); i++) {
+            c = s.charAt(i);
             if (hashMap.containsKey(c)) {
-                hashMap.put(c, hashMap.get(c)+1);
-            }else {
+                hashMap.put(c, hashMap.get(c) + 1);
+            } else {
                 charCount++;
                 hashMap.put(c, 1);
             }
         }
 
-        if(charCount<3){
-            if(charCount==1){
+        if (charCount < 3) {
+            if (charCount == 1) {
                 return 1;
-            }else {
+            } else {
                 return 2;
             }
         }

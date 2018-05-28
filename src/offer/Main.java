@@ -15,8 +15,8 @@ import java.util.LinkedList;
  * @since
  */
 public class Main {
-    public static void main(String[] args){
-        int[][] arr={
+    public static void main(String[] args) {
+        int[][] arr = {
                 {1, 2, 11, 14},
                 {5, 10, 18, 22},
                 {9, 32, 64, 77},
@@ -227,65 +227,55 @@ public class Main {
     }
 
     public static int LastRemaining_Solution(int n, int m) {
-        if (n<1 || m<1){
+        if (n < 1 || m < 1) {
             return 0;
         }
-        LinkedList<Integer> childs=new LinkedList<>();
+        LinkedList<Integer> childs = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             childs.add(i);
         }
 
-        for(int index=0; childs.size()>1; childs.remove(index)){
-            index+=m-1;
-            index%=childs.size();
+        for (int index = 0; childs.size() > 1; childs.remove(index)) {
+            index += m - 1;
+            index %= childs.size();
         }
 
         return childs.get(0);
     }
 
     public static double Power(double base, int exponent) {
-        if (exponent==0) {
+        if (exponent == 0) {
             return 1;
         }
 
-        double d=1;
-        for(int i=Math.abs(exponent); i>0; i--, d*=base);
+        double d = 1;
+        for (int i = Math.abs(exponent); i > 0; i--, d *= base) ;
 
-        return exponent>0? d: 1/d;
+        return exponent > 0 ? d : 1 / d;
     }
 
     public static int JumpFloorII(int target) {
-        return (int) Math.pow(2, target-1);
+        return (int) Math.pow(2, target - 1);
     }
 
     public static int JumpFloor(int target) {
-        if(target<2){
+        if (target < 2) {
             return 1;
         }
 
-        return JumpFloor(target-1)+JumpFloor(target-2);
+        return JumpFloor(target - 1) + JumpFloor(target - 2);
     }
 
 
-
-
-
-
-
-
-
-
-
-
-    public static void inOrder(TreeNode root){
-        if (root==null) return;
+    public static void inOrder(TreeNode root) {
+        if (root == null) return;
         inOrder(root.left);
-        System.out.print(root.val+" ");
+        System.out.print(root.val + " ");
         inOrder(root.right);
     }
 
-    public static TreeNode buildBinaryTree(int[] nodes){
-        if (nodes == null || nodes.length<1) {
+    public static TreeNode buildBinaryTree(int[] nodes) {
+        if (nodes == null || nodes.length < 1) {
             return null;
         }
 
@@ -293,18 +283,18 @@ public class Main {
     }
 
     private static TreeNode build(int[] nodes, int start) {
-        int val=nodes[start];
-        if(val==-1){
+        int val = nodes[start];
+        if (val == -1) {
             return null;
-        }else {
-            TreeNode node=new TreeNode(val);
-            int left=start*2+1;
-            if(left<nodes.length){
-                node.left=build(nodes, left);
+        } else {
+            TreeNode node = new TreeNode(val);
+            int left = start * 2 + 1;
+            if (left < nodes.length) {
+                node.left = build(nodes, left);
             }
-            int right=left+1;
-            if(right<nodes.length){
-                node.right=build(nodes, right);
+            int right = left + 1;
+            if (right < nodes.length) {
+                node.right = build(nodes, right);
             }
 
             return node;

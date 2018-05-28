@@ -16,28 +16,28 @@ import java.util.ArrayList;
  */
 class _40_ {
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
-        ArrayList<ArrayList<Integer>> lists=new ArrayList<>();
-        if(sum<3){
+        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
+        if (sum < 3) {
             return lists;
         }
 
-        int bound=(sum+1)/2;
-        int curSum=3;
+        int bound = (sum + 1) / 2;
+        int curSum = 3;
         int n;
-        for(int start=1, end=2; start<bound; ) {
+        for (int start = 1, end = 2; start < bound; ) {
 //            for (n = start; n <= end; curSum += n, n++) ;
             if (curSum == sum) {
                 ArrayList list = new ArrayList();
                 for (n = start; n <= end; list.add(n), n++) ;
                 lists.add(list);
                 end++;
-                curSum+=end;
+                curSum += end;
             } else if (curSum > sum) {
                 start++;
-                curSum-=start-1;
+                curSum -= start - 1;
             } else {
                 end++;
-                curSum+=end;
+                curSum += end;
             }
         }
 

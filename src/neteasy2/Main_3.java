@@ -16,31 +16,31 @@ import java.util.Scanner;
  */
 public class Main_3 {
     public static void main(String[] args) {
-        Scanner cin=new Scanner(System.in);
-        for(String s; cin.hasNext(); ){
-            s=cin.next();
+        Scanner cin = new Scanner(System.in);
+        for (String s; cin.hasNext(); ) {
+            s = cin.next();
             System.out.println(getMaxLen(s));
         }
 
     }
 
     private static int getMaxLen(String s) {
-        int len=s.length();
-        if (s.length()<2) {
+        int len = s.length();
+        if (s.length() < 2) {
             return 1;
         }
 
-        int maxLen=0, curLen=0;
-        for (int i = 0; i < len-1; i++) {
-            if(s.charAt(i)!=s.charAt(i+1)){
+        int maxLen = 0, curLen = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (s.charAt(i) != s.charAt(i + 1)) {
                 curLen++;
-            }else {
-                maxLen=Math.max(maxLen, curLen+1);
-                curLen=0;
+            } else {
+                maxLen = Math.max(maxLen, curLen + 1);
+                curLen = 0;
             }
         }
 
-        maxLen=Math.max(maxLen, curLen+1);
+        maxLen = Math.max(maxLen, curLen + 1);
         return maxLen;
     }
 }

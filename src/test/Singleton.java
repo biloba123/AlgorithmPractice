@@ -14,11 +14,11 @@ package test;
 enum Singleton {
     INSTANCE;
 
-    private Singleton(){
+    private Singleton() {
         System.out.println("init");
     }
 
-    public void fun(){
+    public void fun() {
         System.out.println("fun");
     }
 }

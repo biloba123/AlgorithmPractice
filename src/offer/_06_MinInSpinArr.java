@@ -13,23 +13,23 @@ package offer;
  * @since
  */
 class _06_MinInSpinArr {
-    public static int min(int[] array){
-        if(array==null || array.length<1){
+    public static int min(int[] array) {
+        if (array == null || array.length < 1) {
             throw new RuntimeException("Invalid input.");
         }
 
-        int mid=0;
-        for(int low=0, high=array.length-1; low<high; ){
-            if (high-low==1){
+        int mid = 0;
+        for (int low = 0, high = array.length - 1; low < high; ) {
+            if (high - low == 1) {
                 return array[high];
             }
 
-            mid=(low+high)/2;
-            if(array[mid]>=array[low]){
-                low=mid;
+            mid = (low + high) / 2;
+            if (array[mid] >= array[low]) {
+                low = mid;
             }
-            if(array[mid]<=array[high]){
-                high=mid;
+            if (array[mid] <= array[high]) {
+                high = mid;
             }
         }
 

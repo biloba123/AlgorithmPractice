@@ -13,14 +13,14 @@ package offer;
  * @since
  */
 class _30_ {
-    public String PrintMinNumber(int [] numbers) {
-        if (numbers==null || numbers.length<1) {
+    public String PrintMinNumber(int[] numbers) {
+        if (numbers == null || numbers.length < 1) {
             return "";
         }
 
         sort(numbers);
 
-        StringBuilder sb=new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for (int number : numbers) {
             sb.append(number);
         }
@@ -29,25 +29,25 @@ class _30_ {
 
     private void sort(int[] numbers) {
         int min, temp;
-        for (int i = 0; i < numbers.length-1; i++) {
-            min=i;
-            for(int j=i+1; j<numbers.length; j++){
-                if(compare(numbers[min], numbers[j])){
-                    min=j;
+        for (int i = 0; i < numbers.length - 1; i++) {
+            min = i;
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (compare(numbers[min], numbers[j])) {
+                    min = j;
                 }
             }
-            if(min!=i){
-                temp=numbers[i];
-                numbers[i]=numbers[min];
-                numbers[min]=temp;
+            if (min != i) {
+                temp = numbers[i];
+                numbers[i] = numbers[min];
+                numbers[min] = temp;
             }
         }
     }
 
     private boolean compare(int num1, int num2) {
-        String s1=num1+""+num2,
-                s2=num2+""+num1;
-        return s1.compareTo(s2)>0;
+        String s1 = num1 + "" + num2,
+                s2 = num2 + "" + num1;
+        return s1.compareTo(s2) > 0;
     }
 
 }

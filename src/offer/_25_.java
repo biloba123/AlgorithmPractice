@@ -16,12 +16,12 @@ import java.util.ArrayList;
  */
 class _25_ {
     public ArrayList<String> Permutation(String str) {
-        ArrayList<String> list=new ArrayList<>();
-        if (str == null || str.length()<1) {
+        ArrayList<String> list = new ArrayList<>();
+        if (str == null || str.length() < 1) {
             return list;
         }
 
-        char[] chars=str.toCharArray();
+        char[] chars = str.toCharArray();
         charOnN(chars, 0, list);
 
         list.sort(String::compareTo);
@@ -29,21 +29,21 @@ class _25_ {
     }
 
     private void charOnN(char[] chars, int n, ArrayList<String> list) {
-        if (n==chars.length-1){
-            String s=new String(chars);
-            if (list.indexOf(s)==-1) {
+        if (n == chars.length - 1) {
+            String s = new String(chars);
+            if (list.indexOf(s) == -1) {
                 list.add(s);
             }
-        }else {
+        } else {
             char temp;
-            for(int i=n; i<chars.length; i++){
-                temp=chars[n];
-                chars[n]=chars[i];
-                chars[i]=temp;
-                charOnN(chars, n+1, list);
+            for (int i = n; i < chars.length; i++) {
+                temp = chars[n];
+                chars[n] = chars[i];
+                chars[i] = temp;
+                charOnN(chars, n + 1, list);
                 //记得交换回来
-                chars[i]=chars[n];
-                chars[n]=temp;
+                chars[i] = chars[n];
+                chars[n] = temp;
             }
         }
     }

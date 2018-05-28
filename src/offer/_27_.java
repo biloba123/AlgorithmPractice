@@ -15,24 +15,24 @@ import java.util.ArrayList;
  * @since
  */
 class _27_ {
-    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
-        ArrayList<Integer> list=new ArrayList<>();
-        if (input==null || input.length<1 || input.length<k) {
+    public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (input == null || input.length < 1 || input.length < k) {
             return list;
         }
 
-        int len=input.length, min, temp;
-        for(int i=0; i<k; i++){
-            min=i;
-            for(int j=i+1; j<len; j++){
-                if(input[min]>input[j]){
-                    min=j;
+        int len = input.length, min, temp;
+        for (int i = 0; i < k; i++) {
+            min = i;
+            for (int j = i + 1; j < len; j++) {
+                if (input[min] > input[j]) {
+                    min = j;
                 }
             }
 
-            temp=input[min];
-            input[min]=input[i];
-            input[i]=temp;
+            temp = input[min];
+            input[min] = input[i];
+            input[i] = temp;
 
             list.add(temp);
         }

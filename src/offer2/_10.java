@@ -43,12 +43,12 @@ class _10 {
         }
 
         int low, high, middle;
-        for(low=1, high=numbers.length-1; low!=high; ){
-            middle=(low+high)>>1;
-            if(getCount(numbers, low, middle)>middle-low+1){
-                high=middle;
-            }else {
-                low=middle+1;
+        for (low = 1, high = numbers.length - 1; low != high; ) {
+            middle = (low + high) >> 1;
+            if (getCount(numbers, low, middle) > middle - low + 1) {
+                high = middle;
+            } else {
+                low = middle + 1;
             }
         }
 
@@ -56,9 +56,9 @@ class _10 {
     }
 
     private int getCount(int[] numbers, int low, int high) {
-        int count=0;
+        int count = 0;
         for (int number : numbers) {
-            if (number>=low && number<=high) {
+            if (number >= low && number <= high) {
                 count++;
             }
         }

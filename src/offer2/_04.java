@@ -13,26 +13,26 @@ package offer2;
  * @since
  */
 class _04 {
-    public TreeNode reConstructBinaryTree(int [] pre, int [] in) {
-        if (pre==null || in==null || pre.length!=in.length || pre.length<1) {
+    public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+        if (pre == null || in == null || pre.length != in.length || pre.length < 1) {
             return null;
         }
 
-        return rebuildTree(pre, 0, pre.length-1, in, 0, in.length-1);
+        return rebuildTree(pre, 0, pre.length - 1, in, 0, in.length - 1);
     }
 
     private TreeNode rebuildTree(int[] pre, int pStart, int pEnd, int[] in, int iStart, int iEnd) {
-        if (pStart>pEnd || iStart>iEnd) {
+        if (pStart > pEnd || iStart > iEnd) {
             return null;
         }
 
-        TreeNode node=new TreeNode(pre[pStart]);
-        int rootIndex=getRootIndex(in, iStart, iEnd, node.val);
-        int leftCount=rootIndex-iStart;
+        TreeNode node = new TreeNode(pre[pStart]);
+        int rootIndex = getRootIndex(in, iStart, iEnd, node.val);
+        int leftCount = rootIndex - iStart;
 
-        if (rootIndex!=-1) {
-            node.left=rebuildTree(pre, pStart+1, pStart+leftCount, in, iStart, rootIndex-1);
-            node.right=rebuildTree(pre, pStart+leftCount+1, pEnd, in, rootIndex+1, iEnd);
+        if (rootIndex != -1) {
+            node.left = rebuildTree(pre, pStart + 1, pStart + leftCount, in, iStart, rootIndex - 1);
+            node.right = rebuildTree(pre, pStart + leftCount + 1, pEnd, in, rootIndex + 1, iEnd);
             return node;
         }
 
@@ -40,8 +40,8 @@ class _04 {
     }
 
     private int getRootIndex(int[] in, int iStart, int iEnd, int root) {
-        for(int i=iStart; i<=iEnd; i++){
-            if(in[i]==root){
+        for (int i = iStart; i <= iEnd; i++) {
+            if (in[i] == root) {
                 return i;
             }
         }

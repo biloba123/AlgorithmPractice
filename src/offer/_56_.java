@@ -25,19 +25,20 @@ class _56_ {
     }
 
     public TreeLinkNode GetNext(TreeLinkNode pNode) {
-        if (pNode==null) {
+        if (pNode == null) {
             return null;
         }
 
-        TreeLinkNode node=null;
-        if(pNode.right!=null){//有右子树
-            for (node=pNode.right; node.left!=null; node=node.left);
-        }else if(pNode.next!=null){
-            if(pNode.next.right==pNode){//是右节点
-                for(node=pNode.next; node.next!=null && node.next.right==node; node=node.next);
-                node=node.next;
-            }else {//是左结点
-                node=pNode.next;
+        TreeLinkNode node = null;
+        if (pNode.right != null) {//有右子树
+            for (node = pNode.right; node.left != null; node = node.left) ;
+        } else if (pNode.next != null) {
+            if (pNode.next.right == pNode) {//是右节点
+                for (node = pNode.next; node.next != null && node.next.right == node; node = node.next)
+                    ;
+                node = node.next;
+            } else {//是左结点
+                node = pNode.next;
             }
         }
 

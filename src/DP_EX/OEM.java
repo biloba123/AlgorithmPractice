@@ -13,23 +13,23 @@ package DP_EX;
  * @since
  */
 public class OEM {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Factory factory = new DellFactory();
         Laptop laptop = factory.productLaptop();
         laptop.work();
     }
 }
 
-abstract class Laptop{
+abstract class Laptop {
     //笔记本品牌
     private String brand;
 
-    protected Laptop(String brand){
+    protected Laptop(String brand) {
         this.brand = brand;
     }
 
-    public void work(){
-        System.out.println(brand+"笔记本电脑正在运行");
+    public void work() {
+        System.out.println(brand + "笔记本电脑正在运行");
     }
 
     public String getBrand() {
@@ -37,35 +37,35 @@ abstract class Laptop{
     }
 }
 
-class HPLaptop extends Laptop{
-    public HPLaptop(){
+class HPLaptop extends Laptop {
+    public HPLaptop() {
         super("HP");
     }
 }
 
-class AcerLaptop extends Laptop{
-    public AcerLaptop(){
+class AcerLaptop extends Laptop {
+    public AcerLaptop() {
         super("Acer");
     }
 }
 
-class LenovoLaptop extends Laptop{
-    public LenovoLaptop(){
+class LenovoLaptop extends Laptop {
+    public LenovoLaptop() {
         super("Lenovo");
     }
 }
 
-class DellLaptop extends Laptop{
-    public DellLaptop(){
+class DellLaptop extends Laptop {
+    public DellLaptop() {
         super("Dell");
     }
 }
 
-interface Factory{
+interface Factory {
     Laptop productLaptop();
 }
 
-class HPFactory implements Factory{
+class HPFactory implements Factory {
 
     @Override
     public Laptop productLaptop() {
@@ -73,7 +73,7 @@ class HPFactory implements Factory{
     }
 }
 
-class AcerFactory implements Factory{
+class AcerFactory implements Factory {
 
     @Override
     public Laptop productLaptop() {
@@ -81,7 +81,7 @@ class AcerFactory implements Factory{
     }
 }
 
-class LenovoFactory implements Factory{
+class LenovoFactory implements Factory {
 
     @Override
     public Laptop productLaptop() {
@@ -89,7 +89,7 @@ class LenovoFactory implements Factory{
     }
 }
 
-class DellFactory implements Factory{
+class DellFactory implements Factory {
 
     @Override
     public Laptop productLaptop() {

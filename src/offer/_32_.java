@@ -17,23 +17,23 @@ import java.util.Map;
  */
 class _32_ {
     public int FirstNotRepeatingChar(String str) {
-        if (str == null || str.length()<1) {
+        if (str == null || str.length() < 1) {
             return -1;
         }
 
-        char[] chars=str.toCharArray();
-        LinkedHashMap<Character, Integer> hashMap=new LinkedHashMap();
+        char[] chars = str.toCharArray();
+        LinkedHashMap<Character, Integer> hashMap = new LinkedHashMap();
 
         for (char aChar : chars) {
             if (hashMap.containsKey(aChar)) {
-                hashMap.replace(aChar, hashMap.get(aChar)+1);
-            }else {
+                hashMap.replace(aChar, hashMap.get(aChar) + 1);
+            } else {
                 hashMap.put(aChar, 1);
             }
         }
 
         for (Map.Entry<Character, Integer> characterIntegerEntry : hashMap.entrySet()) {
-            if(characterIntegerEntry.getValue()==1){
+            if (characterIntegerEntry.getValue() == 1) {
                 return str.indexOf(characterIntegerEntry.getKey());
             }
         }

@@ -13,29 +13,29 @@ package offer;
  * @since
  */
 class _42_ {
-    public String LeftRotateString(String str,int n) {
-        if (str==null || str.length()<1) {
+    public String LeftRotateString(String str, int n) {
+        if (str == null || str.length() < 1) {
             return "";
         }
 
-        char[] chars=str.toCharArray();
-        reverse(chars, 0, n-1);
-        reverse(chars, n, chars.length-1);
-        reverse(chars, 0, chars.length-1);
+        char[] chars = str.toCharArray();
+        reverse(chars, 0, n - 1);
+        reverse(chars, n, chars.length - 1);
+        reverse(chars, 0, chars.length - 1);
 
         return new String(chars);
     }
 
     private void reverse(char[] chars, int start, int end) {
-        if (start>=end) {
+        if (start >= end) {
             return;
         }
 
         char temp;
-        for(int i=start, j=end; i<j; i++, j--){
-            temp=chars[i];
-            chars[i]=chars[j];
-            chars[j]=temp;
+        for (int i = start, j = end; i < j; i++, j--) {
+            temp = chars[i];
+            chars[i] = chars[j];
+            chars[j] = temp;
         }
     }
 }

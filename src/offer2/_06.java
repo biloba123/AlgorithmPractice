@@ -13,19 +13,19 @@ package offer2;
  * @since
  */
 class _06 {
-    public int minNumberInRotateArray(int [] array) {
-        if (array == null || array.length<1) {
+    public int minNumberInRotateArray(int[] array) {
+        if (array == null || array.length < 1) {
             return 0;
         }
 
-        int low=0, high=array.length-1;
+        int low = 0, high = array.length - 1;
         int mid;
-        while (low!=high){
-            mid=(low+high)/2;
-            if(array[low]<=array[mid] && array[mid]>array[high]){
-                low=mid+1;
-            }else {
-                high=mid;
+        while (low != high) {
+            mid = (low + high) / 2;
+            if (array[low] <= array[mid] && array[mid] > array[high]) {
+                low = mid + 1;
+            } else {
+                high = mid;
             }
         }
 

@@ -15,17 +15,17 @@ import java.lang.reflect.Constructor;
  * @since
  */
 class Singleton5 {
-    private static class Singleton5Holder{
-        private static final Singleton5 INSTANCE=new Singleton5();
+    private static class Singleton5Holder {
+        private static final Singleton5 INSTANCE = new Singleton5();
     }
 
-    private Singleton5(){
-        if(getInstance() != null){
+    private Singleton5() {
+        if (getInstance() != null) {
             throw new AssertionError();
         }
     }
 
-    public static Singleton5 getInstance(){
+    public static Singleton5 getInstance() {
         return Singleton5Holder.INSTANCE;
     }
 
@@ -36,8 +36,8 @@ class Singleton5 {
         // 反射机制使得private方法可以被访问
         constructor.setAccessible(true);
 
-        Singleton5 s1=constructor.newInstance();
-        Singleton5 s2=Singleton5.getInstance();
+        Singleton5 s1 = constructor.newInstance();
+        Singleton5 s2 = Singleton5.getInstance();
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s1 == s2);

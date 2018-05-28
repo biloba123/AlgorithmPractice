@@ -14,9 +14,9 @@ package offer2;
  */
 class _09 {
     public int NumberOf1(int n) {
-        int count=0;
-        for (int i = 0; i < 32; i++, n>>=1) {
-            count+=((n)&1);
+        int count = 0;
+        for (int i = 0; i < 32; i++, n >>= 1) {
+            count += ((n) & 1);
         }
         return count;
     }

@@ -14,11 +14,11 @@ import java.lang.reflect.Proxy;
  * @since
  */
 public class ProxyDemo {
-    public static void main(String args[]){
-        Cart cart=new Cart();
+    public static void main(String args[]) {
+        Cart cart = new Cart();
 //        CartProxy cartProxy=new CartProxy(cart);
 //        cartProxy.addCommodity();
-        Subject proxy= (Subject) Proxy.newProxyInstance(
+        Subject proxy = (Subject) Proxy.newProxyInstance(
                 Cart.class.getClassLoader(),
                 Cart.class.getInterfaces(),
                 new MyInvocationHandler(cart)
@@ -28,23 +28,22 @@ public class ProxyDemo {
 }
 
 
-
-interface Subject{
+interface Subject {
     void addCommodity();
 }
 
-class Cart implements Subject{
+class Cart implements Subject {
     @Override
     public void addCommodity() {
         System.out.println("add success!");
     }
 }
 
-class CartProxy implements Subject{
+class CartProxy implements Subject {
     private Cart mCart;
 
-    public CartProxy(Cart c){
-        mCart=c;
+    public CartProxy(Cart c) {
+        mCart = c;
     }
 
     @Override
@@ -55,11 +54,11 @@ class CartProxy implements Subject{
     }
 }
 
-class MyInvocationHandler implements InvocationHandler{
+class MyInvocationHandler implements InvocationHandler {
     private Cart mCart;
 
-    public MyInvocationHandler(Cart c){
-        mCart=c;
+    public MyInvocationHandler(Cart c) {
+        mCart = c;
     }
 
     @Override

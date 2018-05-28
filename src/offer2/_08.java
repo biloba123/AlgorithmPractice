@@ -14,14 +14,17 @@ package offer2;
  */
 class _08 {
     public int JumpFloor(int target) {
-        if(target<1){
+        if (target < 1) {
             return 0;
         }
 
         switch (target) {
-            case 1: return 1;
-            case 2: return 2;
-            default: return JumpFloor(target-1)+JumpFloor(target-2);
+            case 1:
+                return 1;
+            case 2:
+                return 2;
+            default:
+                return JumpFloor(target - 1) + JumpFloor(target - 2);
         }
     }
 }

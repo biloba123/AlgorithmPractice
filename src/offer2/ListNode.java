@@ -20,17 +20,17 @@ public class ListNode {
         this.val = val;
     }
 
-    public static ListNode createList(int... nodes){
-        if(nodes.length<1){
+    public static ListNode createList(int... nodes) {
+        if (nodes.length < 1) {
             return null;
         }
 
-        ListNode head=new ListNode(nodes[0]);
-        ListNode node=head, temp;
+        ListNode head = new ListNode(nodes[0]);
+        ListNode node = head, temp;
         for (int i = 1; i < nodes.length; i++) {
-            temp=new ListNode(nodes[i]);
-            node.next=temp;
-            node=temp;
+            temp = new ListNode(nodes[i]);
+            node.next = temp;
+            node = temp;
         }
 
         return head;

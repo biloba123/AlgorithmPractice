@@ -18,14 +18,14 @@ class _57_ {
     }
 
     private boolean isSymmetrical(TreeNode left, TreeNode right) {
-        if (left==null && right==null) {
+        if (left == null && right == null) {
             return true;
         }
 
-        if(left==null || right==null){
+        if (left == null || right == null) {
             return false;
         }
 
-        return left.val==right.val && isSymmetrical(left.left, right.right) &&isSymmetrical(left.right, right.left);
+        return left.val == right.val && isSymmetrical(left.left, right.right) && isSymmetrical(left.right, right.left);
     }
 }

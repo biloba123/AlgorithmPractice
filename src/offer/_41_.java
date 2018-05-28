@@ -14,44 +14,44 @@ package offer;
  */
 class _41_ {
     public String ReverseSentence(String str) {
-        if (str==null || str.length()<1) {
+        if (str == null || str.length() < 1) {
             return "";
         }
 
-        char[] chars=str.toCharArray();
-        reverse(chars, 0, chars.length-1);
+        char[] chars = str.toCharArray();
+        reverse(chars, 0, chars.length - 1);
 
-        int start=-1;
+        int start = -1;
         for (int i = 0; i < chars.length; i++) {
-            if(chars[i]!=' '){
-                if(start==-1) {
+            if (chars[i] != ' ') {
+                if (start == -1) {
                     start = i;
                 }
-            }else {
-                if(start!=-1){
-                    reverse(chars, start, i-1);
-                    start=-1;
+            } else {
+                if (start != -1) {
+                    reverse(chars, start, i - 1);
+                    start = -1;
                 }
             }
         }
 
-        if (start!=-1){
-            reverse(chars, start, chars.length-1);
+        if (start != -1) {
+            reverse(chars, start, chars.length - 1);
         }
 
         return new String(chars);
     }
 
     private void reverse(char[] chars, int start, int end) {
-        if (start>=end) {
+        if (start >= end) {
             return;
         }
 
         char temp;
-        for(int i=start, j=end; i<j; i++, j--){
-            temp=chars[i];
-            chars[i]=chars[j];
-            chars[j]=temp;
+        for (int i = start, j = end; i < j; i++, j--) {
+            temp = chars[i];
+            chars[i] = chars[j];
+            chars[j] = temp;
         }
     }
 }

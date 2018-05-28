@@ -16,30 +16,30 @@ import java.util.ArrayList;
  */
 class _22_ {
     public static ArrayList<ArrayList<Integer>> findPath(TreeNode root, int expectedSum) {
-        ArrayList<ArrayList<Integer>> lists=new ArrayList<>();
+        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
         if (root == null) {
             return lists;
         }
 
-        ArrayList<TreeNode> list=new ArrayList<>();
+        ArrayList<TreeNode> list = new ArrayList<>();
         find(root, expectedSum, 0, list, lists);
 
         return lists;
     }
 
     private static void find(TreeNode node, int expectedSum, int curSum, ArrayList<TreeNode> list, ArrayList<ArrayList<Integer>> lists) {
-        if(node!=null){
+        if (node != null) {
             list.add(node);
-            curSum+=node.val;
-            if(curSum==expectedSum){
-                if(node.left==null && node.right==null) {
-                    ArrayList<Integer> list1=new ArrayList<>();
+            curSum += node.val;
+            if (curSum == expectedSum) {
+                if (node.left == null && node.right == null) {
+                    ArrayList<Integer> list1 = new ArrayList<>();
                     for (TreeNode treeNode : list) {
                         list1.add(treeNode.val);
                     }
                     lists.add(list1);
                 }
-            }else if(curSum<expectedSum){
+            } else if (curSum < expectedSum) {
                 find(node.right, expectedSum, curSum, list, lists);
                 find(node.left, expectedSum, curSum, list, lists);
             }

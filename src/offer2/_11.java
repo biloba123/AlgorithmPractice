@@ -13,7 +13,7 @@ package offer2;
  * @since
  */
 class _11 {
-    public TreeNode GetNext(TreeNode pNode){
+    public TreeNode GetNext(TreeNode pNode) {
         if (pNode == null) {
             return null;
         }
@@ -21,17 +21,18 @@ class _11 {
         TreeNode node;
         //有右子树
         if (pNode.right != null) {
-            for(node=pNode.right; node.left!=null; node=node.left);
+            for (node = pNode.right; node.left != null; node = node.left) ;
             return node;
         }
 
-        TreeNode parent=pNode.next;
+        TreeNode parent = pNode.next;
         if (parent != null) {
-            if(parent.left==pNode){
+            if (parent.left == pNode) {
                 return parent;
-            }else {
-                for(node=pNode; parent!=null && parent.right==node; node=parent, parent=node.next);
-                if(parent!=null){
+            } else {
+                for (node = pNode; parent != null && parent.right == node; node = parent, parent = node.next)
+                    ;
+                if (parent != null) {
                     return parent;
                 }
             }

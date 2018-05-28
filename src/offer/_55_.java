@@ -18,16 +18,16 @@ class _55_ {
             return null;
         }
 
-        ListNode first=new ListNode(-1);
-        first.next=pHead;
-        for(ListNode pre=first, node=pHead; node!=null && node.next!=null; ){
-            if(node.val==node.next.val){
-                for(; node.next!=null && node.val==node.next.val; node=node.next);
-                node=node.next;
-                pre.next=node;
-            }else {
-                node=node.next;
-                pre=pre.next;
+        ListNode first = new ListNode(-1);
+        first.next = pHead;
+        for (ListNode pre = first, node = pHead; node != null && node.next != null; ) {
+            if (node.val == node.next.val) {
+                for (; node.next != null && node.val == node.next.val; node = node.next) ;
+                node = node.next;
+                pre.next = node;
+            } else {
+                node = node.next;
+                pre = pre.next;
             }
         }
 

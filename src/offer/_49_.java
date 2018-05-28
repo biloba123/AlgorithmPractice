@@ -13,8 +13,8 @@ package offer;
  * @since
  */
 class _49_ {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers==null || length<1) {
+    public boolean duplicate(int numbers[], int length, int[] duplication) {
+        if (numbers == null || length < 1) {
             return false;
         }
 
@@ -35,16 +35,16 @@ class _49_ {
 
         int num;
         for (int i = 0; i < length; ) {
-            num=numbers[i];
-            if (num!=i) {
-                if(num==numbers[num]){
-                    duplication[0]=num;
+            num = numbers[i];
+            if (num != i) {
+                if (num == numbers[num]) {
+                    duplication[0] = num;
                     return true;
-                }else {
-                    numbers[i]=numbers[num];
-                    numbers[num]=num;
+                } else {
+                    numbers[i] = numbers[num];
+                    numbers[num] = num;
                 }
-            }else {
+            } else {
                 i++;
             }
         }

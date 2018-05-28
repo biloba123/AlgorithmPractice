@@ -14,16 +14,16 @@ package offer;
  */
 class _07_Fibonacci {
     public static int Fibonacci(int n) {
-        if (n<=0){
+        if (n <= 0) {
             return 0;
         }
 
-        int a=0, b=1;
-        for(; n>1; n-=2){
-            a+=b;
-            b+=a;
+        int a = 0, b = 1;
+        for (; n > 1; n -= 2) {
+            a += b;
+            b += a;
         }
 
-        return n==0?a:b;
+        return n == 0 ? a : b;
     }
 }

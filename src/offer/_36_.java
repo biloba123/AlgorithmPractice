@@ -14,15 +14,15 @@ package offer;
  */
 class _36_ {
     public int TreeDepth(TreeNode root) {
-        if(root==null){
+        if (root == null) {
             return 0;
         }
 
-        if(root.right==null && root.left==null){
+        if (root.right == null && root.left == null) {
             return 1;
         }
 
-        return 1+Math.max(TreeDepth(root.left), TreeDepth(root.right));
+        return 1 + Math.max(TreeDepth(root.left), TreeDepth(root.right));
     }
 
 }

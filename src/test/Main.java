@@ -1,4 +1,5 @@
 package test;
+
 /**
  * 一句话功能描述
  * 功能详细描述
@@ -14,10 +15,10 @@ package test;
 public class Main {
     public static void main(String[] args) {
         System.out.println("start");
-        Singleton singleton=Singleton.INSTANCE;
+        Singleton singleton = Singleton.INSTANCE;
         System.out.println("call fun");
         singleton.fun();
     }
 
-    
+
 }

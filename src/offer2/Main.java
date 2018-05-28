@@ -13,7 +13,7 @@ package offer2;
  * @since
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        System.out.println(new _01().Find(11, get2DimenArr()));
 
 //        new _03().printListFromTailToHead(
@@ -50,17 +50,17 @@ public class Main {
 
 //        System.out.println(new _10().duplicate(new int[]{2,1,5,4,3,2,6,7}));
 
-        TreeNode root= TreeNode.createBinaryTree(get1DimenArr());
+        TreeNode root = TreeNode.createBinaryTree(get1DimenArr());
         root.inOrder();
 
         System.out.println(new _11().GetNext(root.left).val);
     }
 
-    private static int[] get1DimenArr(){
+    private static int[] get1DimenArr() {
         return new int[]{1, 2, 3, 4, 0, 0, 5, 0, 0, 0, 0, 0, 0, 6, 7};
     }
 
-    private static int[][] get2DimenArr(){
+    private static int[][] get2DimenArr() {
         return new int[][]{{1, 3, 4}, {2, 4, 5}, {7, 10, 11}};
     }
 }

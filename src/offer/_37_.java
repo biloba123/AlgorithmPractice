@@ -18,15 +18,15 @@ class _37_ {
     }
 
     private boolean isBlanced(TreeNode root, int[] depth) {
-        if(root==null){
-            depth[0]=0;
+        if (root == null) {
+            depth[0] = 0;
             return true;
         }
 
-        int[] leftDepth=new int[1], rightDepth=new int[1];
+        int[] leftDepth = new int[1], rightDepth = new int[1];
         if (isBlanced(root.left, leftDepth) && isBlanced(root.right, rightDepth)) {
-            if (Math.abs(leftDepth[0]-rightDepth[0])<2) {
-                depth[0]=Math.max(leftDepth[0], rightDepth[0])+1;
+            if (Math.abs(leftDepth[0] - rightDepth[0]) < 2) {
+                depth[0] = Math.max(leftDepth[0], rightDepth[0]) + 1;
                 return true;
             }
         }

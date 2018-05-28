@@ -17,15 +17,15 @@ import java.util.Stack;
  */
 class _03_ {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-        if(listNode==null) return null;
+        if (listNode == null) return null;
 
-        Stack<Integer> stack=new Stack<>();
-        for(; listNode!=null; listNode=listNode.next){
+        Stack<Integer> stack = new Stack<>();
+        for (; listNode != null; listNode = listNode.next) {
             stack.push(listNode.val);
         }
 
-        ArrayList<Integer> list=new ArrayList<>();
-        while(!stack.empty()){
+        ArrayList<Integer> list = new ArrayList<>();
+        while (!stack.empty()) {
             list.add(stack.pop());
         }
 
@@ -33,13 +33,13 @@ class _03_ {
     }
 
 
-       public class ListNode {
-           int val;
-           ListNode next = null;
+    public class ListNode {
+        int val;
+        ListNode next = null;
 
-           ListNode(int val) {
-               this.val = val;
-           }
-       }
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
 
 }
