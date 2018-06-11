@@ -2,156 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2ae2a3c-411b-4f17-8247-9ba55da3c2c6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DP_EX/AbstractFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP_EX/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP_EX/BridgeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP_EX/BuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP_EX/DecoratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP_EX/FacadeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP_EX/ObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP_EX/StrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/intern/InternTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/CartProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/CartProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/ConsumerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/ConsumerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Dish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Fruit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/FruitDish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/FruitDish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/MyInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/MyInvocationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/ProductThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/ProductThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/ali/FindCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/ali/FindCycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/fenbi/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/fenbi/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/leecode/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/leecode/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/meitu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/meitu/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/net/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/net/Frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/net/IEEE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/net/IEEE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/net/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/net/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/neteasy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/neteasy/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer/_17_.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer/_17_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer/_54_.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer/_54_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer/_56_.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer/_56_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer2/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer2/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer2/_08.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer2/_08.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/offer2/_11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/offer2/_11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/qihoo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/qihoo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/singleton/Singleton1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/singleton/Singleton1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/singleton/Singleton2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/singleton/Singleton2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/singleton/Singleton3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/singleton/Singleton3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/sort/SortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/sort/SortTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/tencent/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/tencent/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/test/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/tx/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/tx/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DP_EX/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP_EX/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DP_EX/OEM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP_EX/OEM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FruitDish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FruitDish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProxyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ali/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ali/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fenbi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fenbi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fenbi/Problem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fenbi/Problem1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fenbi/Problem2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fenbi/Problem2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finalizer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finalizer/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode/_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode/_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leecode/_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leecode/_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meitu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meitu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meituan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meituan/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/CRC32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/CRC32.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/IEEE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/IEEE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy2/Main_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy2/Main_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy2/Main_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy2/Main_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy2/Main_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy2/Main_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy2/Main_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy2/Main_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy_final/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy_final/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy_final/Main_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy_final/Main_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neteasy_final/Main_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neteasy_final/Main_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_01_FindNumInArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_01_FindNumInArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_02_Replace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_02_Replace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_03_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_03_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_04_RebuildBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_04_RebuildBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_05_TwoStacksToQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_05_TwoStacksToQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_06_MinInSpinArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_06_MinInSpinArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_07_Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_07_Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_09_PrintOneToNthDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_09_PrintOneToNthDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_10_DeleteNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_10_DeleteNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_11_OddFrontEvenEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_11_OddFrontEvenEnd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_12_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_12_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_13_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_13_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_14_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_14_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_15_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_15_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_16_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_16_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_17_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_17_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_18_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_18_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_19_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_19_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_20_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_20_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_21_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_21_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_22_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_22_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_23_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_23_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_24_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_24_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_25_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_25_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_26_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_26_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_27_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_27_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_28_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_28_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_30_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_30_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_31_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_31_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_32_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_32_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_33_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_33_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_34_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_34_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_35_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_35_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_36_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_36_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_37_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_37_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_38_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_38_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_39_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_39_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_40_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_40_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_41_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_41_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_42_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_42_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_43_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_43_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_45_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_45_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_46_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_46_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_47_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_47_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_48_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_48_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_49_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_49_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_50_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_50_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_51_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_51_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_52_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_52_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_53_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_53_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_54_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_54_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_55_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_55_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_56_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_56_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_57_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_57_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_58_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_58_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_60_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_60_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_63_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_63_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer/_64_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer/_64_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_09.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_09.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offer2/_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/offer2/_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qihoo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qihoo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qihoo/Main_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/qihoo/Main_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singleton/Singleton1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Singleton1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singleton/Singleton2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Singleton2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singleton/Singleton3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Singleton3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singleton/Singleton5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Singleton5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singleton/Singleton6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Singleton6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/SortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tencent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tencent/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DP_EX/BMW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DP_EX/BMWBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/DP_EX/BMWBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DP_EX/BenZ.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DP_EX/BenZBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/DP_EX/BenZBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DP_EX/Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/DP_EX/Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DP_EX/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/DP_EX/Car.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -163,20 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BuilderTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DP_EX/BuilderTest.java">
+      <file leaf-file-name="StrategyTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DP_EX/StrategyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+            <state relative-caret-position="73">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
-                <element signature="method#toString#0;class#Car#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1338#1339#0" expanded="true" />
-                <element signature="e#1627#1628#0" expanded="true" />
-                <element signature="e#1652#1653#0" expanded="true" />
-                <element signature="e#1696#1697#0" expanded="true" />
-                <element signature="e#1721#1722#0" expanded="true" />
-                <element signature="method#productCar#0;class#Director#0" expanded="true" />
+                <element signature="method#main#0;class#StrategyTest#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="method#settleAccount#0;class#Salesclerk#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,11 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/offer2/_05.java" />
-        <option value="$PROJECT_DIR$/src/offer2/_06.java" />
-        <option value="$PROJECT_DIR$/src/offer2/_07.java" />
-        <option value="$PROJECT_DIR$/src/offer2/_08.java" />
-        <option value="$PROJECT_DIR$/src/offer2/_09.java" />
         <option value="$PROJECT_DIR$/src/offer2/_10.java" />
         <option value="$PROJECT_DIR$/src/offer2/ListNode.java" />
         <option value="$PROJECT_DIR$/src/offer2/_03.java" />
@@ -246,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/singleton/Singleton5.java" />
         <option value="$PROJECT_DIR$/src/singleton/Singleton3.java" />
         <option value="$PROJECT_DIR$/src/finalizer/Test.java" />
-        <option value="$PROJECT_DIR$/src/DP_EX/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/DP_EX/OEM.java" />
         <option value="$PROJECT_DIR$/src/singleton/Singleton4.java" />
         <option value="$PROJECT_DIR$/src/net/Test.java" />
@@ -258,6 +114,12 @@
         <option value="$PROJECT_DIR$/src/DP_EX/AdapterTest.java" />
         <option value="$PROJECT_DIR$/src/DP_EX/BridgeTest.java" />
         <option value="$PROJECT_DIR$/src/DP_EX/BuilderTest.java" />
+        <option value="$PROJECT_DIR$/src/intern/InternTest.java" />
+        <option value="$PROJECT_DIR$/src/DP_EX/DecoratorTest.java" />
+        <option value="$PROJECT_DIR$/src/DP_EX/FacadeTest.java" />
+        <option value="$PROJECT_DIR$/src/DP_EX/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/DP_EX/ObserverTest.java" />
+        <option value="$PROJECT_DIR$/src/DP_EX/StrategyTest.java" />
       </list>
     </option>
   </component>
@@ -267,8 +129,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -280,7 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,18 +172,22 @@
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="DP_EX" type="462c0819:PsiDirectoryNode" />
+              <item name="FacadeTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DP_EX" type="462c0819:PsiDirectoryNode" />
+              <item name="ObserverTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,12 +226,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BridgeTest">
+  <component name="RunManager" selected="Application.StrategyTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="AdapterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP_EX.AdapterTest" />
+    <configuration name="DecoratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP_EX.DecoratorTest" />
       <module name="Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -368,8 +241,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="BridgeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP_EX.BridgeTest" />
+    <configuration name="FacadeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP_EX.FacadeTest" />
       <module name="Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -379,13 +252,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="IEEE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.IEEE" />
+    <configuration name="InternTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="intern.InternTest" />
       <module name="Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.*" />
+          <option name="PATTERN" value="intern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -412,8 +285,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="OEM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DP_EX.OEM" />
+    <configuration name="ObserverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP_EX.ObserverTest" />
       <module name="Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -434,13 +307,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Singleton5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="singleton.Singleton5" />
+    <configuration name="StrategyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DP_EX.StrategyTest" />
       <module name="Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="singleton.*" />
+          <option name="PATTERN" value="DP_EX.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -522,19 +395,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="Application.Singleton5" />
-      <item itemvalue="Application.OEM" />
-      <item itemvalue="Application.IEEE" />
-      <item itemvalue="Application.AdapterTest" />
-      <item itemvalue="Application.BridgeTest" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.InternTest" />
+      <item itemvalue="Application.DecoratorTest" />
+      <item itemvalue="Application.ObserverTest" />
+      <item itemvalue="Application.StrategyTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BridgeTest" />
-        <item itemvalue="Application.AdapterTest" />
-        <item itemvalue="Application.IEEE" />
-        <item itemvalue="Application.OEM" />
-        <item itemvalue="Application.Singleton5" />
+        <item itemvalue="Application.StrategyTest" />
+        <item itemvalue="Application.ObserverTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.DecoratorTest" />
+        <item itemvalue="Application.InternTest" />
       </list>
     </recent_temporary>
   </component>
@@ -587,11 +460,13 @@
       <workItem from="1527490093983" duration="955000" />
       <workItem from="1527502661275" duration="5000" />
       <workItem from="1527502669921" duration="5000" />
+      <workItem from="1528073660678" duration="8906000" />
+      <workItem from="1528697692394" duration="2655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52755000" />
+    <option name="totallyTimeSpent" value="64316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,31 +479,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32851985" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32789856" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50076336" side_tool="true" weight="0.43004116" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32977098" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49923664" weight="0.5018116" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32789856" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49923664" weight="0.5036232" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32608697" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4963768" visible="true" weight="0.2778626" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4963768" weight="0.6496" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.5036232" side_tool="true" weight="0.25267175" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.54320985" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.54320985" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32789856" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -640,12 +516,12 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35740072" />
       <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2259542" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32851985" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -655,7 +531,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3267148" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32851985" />
@@ -675,55 +551,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/neteasy2/Main_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neteasy2/Main_3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="15" column="3" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neteasy2/Main_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="54" column="1" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neteasy2/Main_4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="13" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neteasy2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="18" column="14" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neteasy_final/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/neteasy_final/Main_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="21" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/neteasy_final/Main_2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="786">
@@ -924,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DP_EX/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/singleton/Singleton6.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -998,10 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="method#strToBinaryStr#0;class#Utils#0" expanded="true" />
-            <element signature="method#completeStrWithZero#0;class#Utils#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,10 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="method#binaryDiv#0;class#CRC32#0" expanded="true" />
-            <element signature="method#binaryStrToInt#0;class#CRC32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,9 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,15 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createFrames#0;class#Frame#0" expanded="true" />
-            <element signature="method#getCheckoutBinaryStr#0;class#Frame#0" expanded="true" />
-            <element signature="method#macToBinaryStr#0;class#Frame#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="method#setData#0;class#Frame#0" expanded="true" />
-            <element signature="method#dataConvertBinary#0;class#Frame#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,9 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="method#main#0;class#AdapterTest#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,14 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,15 +860,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intern/InternTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP_EX/DecoratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP_EX/FacadeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="method#toString#0;class#Car#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="method#productCar#0;class#Director#0" expanded="true" />
+            <element signature="method#rotate#0;class#Camera#0" expanded="true" />
+            <element signature="method#SecurityFacade#0;class#SecurityFacade#0" expanded="true" />
+            <element signature="method#activate#0;class#SecurityFacade#0" expanded="true" />
+            <element signature="method#deactivate#0;class#SecurityFacade#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP_EX/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1091">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP_EX/ObserverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#ObserverTest#0" expanded="true" />
+            <element signature="method#Product#0;class#Product#0" expanded="true" />
+            <element signature="method#setName#0;class#Product#0" expanded="true" />
+            <element signature="method#setPrice#0;class#Product#0" expanded="true" />
+            <element signature="method#register#0;class#Product#0" expanded="true" />
+            <element signature="method#unregister#0;class#Product#0" expanded="true" />
+            <element signature="method#notifyObservers#0;class#Product#0" expanded="true" />
+            <element signature="method#toString#0;class#Product#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP_EX/StrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="method#main#0;class#StrategyTest#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="method#settleAccount#0;class#Salesclerk#0" expanded="true" />
           </folding>
         </state>
       </provider>
